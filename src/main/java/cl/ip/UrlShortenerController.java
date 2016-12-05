@@ -23,11 +23,16 @@ public class UrlShortenerController {
 	}
 	@RequestMapping(method=RequestMethod.GET)
 	@ResponseBody
-	public UrlResponse getExtendedUrl(@RequestBody String tinyUrl){
+	public UrlResponse getExtendedUrl(@RequestBody String tinyUrl) throws Exception {
 		String extendedUrl =urlservice.getExtendedUrlFromTinyUrl(tinyUrl);
 		UrlResponse response = new UrlResponse();
-		response.url = extendedUrl;
-		return response;
+		if (extendedUrl != null ){
+			response.url = extendedUrl;
+			return response;
+		}else {
+			throw new Exception("Short URL not found");
+		}
+		
 	}
 	@RequestMapping(method=RequestMethod.DELETE)
 	@ResponseBody
