@@ -38,16 +38,16 @@ import cl.ip.UrlServiceProxy;
 public class UrlShortenerControllerTest {
 
 
-    private MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
+     MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
             MediaType.APPLICATION_JSON.getSubtype(),
             Charset.forName("utf8"));
 
-    private MockMvc mockMvc;
+     MockMvc mockMvc;
 
-    private HttpMessageConverter mappingJackson2HttpMessageConverter;
+    HttpMessageConverter mappingJackson2HttpMessageConverter;
 
     @Autowired
-    private WebApplicationContext webApplicationContext;
+    WebApplicationContext webApplicationContext;
     
     @Autowired
     RedisUtils redisUtils;

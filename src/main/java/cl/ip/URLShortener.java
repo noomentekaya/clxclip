@@ -41,15 +41,12 @@ public class URLShortener {
 		}
 	}
 
-	// shortenURL
-	// the public method which can be called to shorten a given URL
 	public String shortenURL(String longURL) {
 		String shortURL = "";
 		if (validateURL(longURL)) {
 			longURL = sanitizeURL(longURL);
 			shortURL = domain + "/" + getKey(longURL);
 		}
-		// add http part
 		return shortURL;
 	}
 
@@ -81,13 +78,10 @@ public class URLShortener {
 
 	private String generateKey() {
 		String key = "";
-		boolean flag = true;
-		while (flag) {
 			key = "";
 			for (int i = 0; i <= keyLength; i++) {
 				key += myChars[myRand.nextInt(62)];
 			}
-		}
 		return key;
 	}
 }
