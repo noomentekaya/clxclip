@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'Clip-Url-Shortener'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+ 	compile("biz.paluch.redis:lettuce:4.3.0.Final")
+    compile("org.springframework.boot:spring-boot-starter-data-rest")
+    compile ("com.google.apis:google-api-services-urlshortener:v1-rev47-1.22.0")
+    compile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
