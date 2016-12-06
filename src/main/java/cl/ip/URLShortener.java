@@ -7,12 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class URLShortener {
 	@Autowired
 	RedisUtils redisUtils;
-	private String domain; // Use this attribute to generate urls for a custom
-							// domain name defaults to http://fkt.in
-	private char myChars[]; // This array is used for character to number
-							// mapping
-	private Random myRand; // Random object used to generate random integers
-	private int keyLength; // the key length in URL defaults to 8
+	private String domain; 
+	private char myChars[];
+	private Random myRand; 
+	private int keyLength; 
 
 	public URLShortener() {
 		myRand = new Random();
