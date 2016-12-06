@@ -2,6 +2,7 @@ package cl.ip.test;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -88,9 +89,9 @@ public class UrlShortenerControllerTest {
     }
     
     @Test
-    public void urlShortnedTestOkayGet() throws Exception {
-    	tinyUrl = "www.cl.ip/SomEthing";
-    	  mockMvc.perform(get("/clip")
+    public void urlExtendedTestOkayPost() throws Exception {
+    	tinyUrl = "http://cl.ip/22ubC8";
+    	  mockMvc.perform(put("/clip")
                   .content(tinyUrl)
                   .contentType(contentType))
                   .andExpect(status().is2xxSuccessful());
@@ -106,12 +107,11 @@ public class UrlShortenerControllerTest {
     }
     
     @Test
-    public void urlTestNotOkayPut() throws Exception {
-    	tinyUrl = "www.cl.ip/SomEthing";
-    	  mockMvc.perform(put("/clip")
-                  .content(tinyUrl)
+    public void urlTestOkayGetAll() throws Exception {
+    	tinyUrl = "www.cl.ip/SomEthing"; //because doesn't exist in redis
+    	  mockMvc.perform(get("/clip/all")
                   .contentType(contentType))
-                  .andExpect(status().is4xxClientError());
+                  .andExpect(status().is2xxSuccessful());
     }
     @Test
     public void urlTestNotOkayPostWithoutBody() throws Exception {
@@ -127,7 +127,7 @@ public class UrlShortenerControllerTest {
     }
     @Test
     public void urlTestNotOkayGetWithoutBody() throws Exception {
-    	mockMvc.perform(get("/clip")
+    	mockMvc.perform(post("/clip")
                 .contentType(contentType))
                 .andExpect(status().is4xxClientError());
     }

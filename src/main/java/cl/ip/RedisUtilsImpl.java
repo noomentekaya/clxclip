@@ -46,7 +46,7 @@ public class RedisUtilsImpl implements RedisUtils{
 		return null;
 	}
 	@Cacheable
-	private List<String> getallKeys(RedisCommands<String, String> syncCommands) {
+	public  List<String> getallKeys(RedisCommands<String, String> syncCommands) {
 		List<String> keys = syncCommands.keys("*");
 		return keys;
 	}

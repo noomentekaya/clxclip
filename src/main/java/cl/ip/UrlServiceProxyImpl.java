@@ -1,5 +1,8 @@
 package cl.ip;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,6 +44,17 @@ public class UrlServiceProxyImpl implements UrlServiceProxy{
 		{ 	urlShortener = new URLShortener();	
 		}
 		return urlShortener;
+	}
+
+	@Override
+	public List<UrlResponse> findAll() {
+		RedisCommands<String, String> syncCommands = redisUtils.getRedisConnection().sync();
+		List<UrlResponse> urls = new ArrayList<>();
+		for(String s : redisUtils.getallKeys(syncCommands)){
+			urls.add(new UrlResponse(s));
+		}
+		return urls;
+		 
 	}
 
 }

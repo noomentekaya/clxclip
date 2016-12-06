@@ -1,5 +1,7 @@
 package cl.ip;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,8 +22,8 @@ public class UrlShortenerController {
 		UrlResponse response = new UrlResponse();
 		response.url = tinyUrl;
 		return response;
-	}
-	@RequestMapping(method=RequestMethod.GET)
+	} 
+	@RequestMapping(method=RequestMethod.PUT) //for design purpose i chosen to use PUT for this instead of a get (see angular code especially http methods)
 	@ResponseBody
 	public UrlResponse getExtendedUrl(@RequestBody String tinyUrl) throws Exception {
 		String extendedUrl =urlservice.getExtendedUrlFromTinyUrl(tinyUrl);
@@ -42,5 +44,13 @@ public class UrlShortenerController {
 		response.url = extendedUrl;
 		return response;
 	}
+	
+	@RequestMapping(method=RequestMethod.GET, value="/all")
+	@ResponseBody
+	public List<UrlResponse> getAllUrls(){
+		List<UrlResponse> urls = urlservice.findAll();
+		return urls;
+	}
+	
 	
 }
