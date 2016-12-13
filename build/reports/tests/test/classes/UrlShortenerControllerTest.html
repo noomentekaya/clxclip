@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class UrlShortenerControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class UrlShortenerControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; UrlShortenerControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.406s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">urlExtendedTestOkayPost</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlShortnedTestOkayPost</td>
+<td>0.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestNotOkayDeleteWithoutBody</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestNotOkayGetWithoutBody</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestNotOkayPostWithInteger</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestNotOkayPostWithoutBody</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestOkayDelete</td>
+<td>0.152s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestOkayGetAll</td>
+<td>0.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">urlTestSameUrlIsReturnedWithPost</td>
+<td>0.125s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:21:37.309 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class UrlShortenerControllerTest]
+21:21:37.311 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:21:37.317 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:21:37.388 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [UrlShortenerControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+21:21:37.409 [Test worker] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@581e9f declaringClass = 'UrlShortenerControllerTest', classes = '{class cl.ip.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+21:21:37.413 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [UrlShortenerControllerTest]: class path resource [UrlShortenerControllerTest-context.xml] does not exist
+21:21:37.414 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [UrlShortenerControllerTest]: class path resource [UrlShortenerControllerTestContext.groovy] does not exist
+21:21:37.414 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [UrlShortenerControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:21:37.454 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [UrlShortenerControllerTest]
+21:21:37.455 [Test worker] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [UrlShortenerControllerTest]: using defaults.
+21:21:37.458 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:21:37.476 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f3cec, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1df4cd3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1300678, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d5f72, org.springframework.test.context.transaction.TransactionalTestExecutionListener@170d98d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@66be64, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13a64d6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1c4398c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a92f48, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1f12567, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@199f51b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@16fb23d]
+21:21:37.478 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [UrlShortenerControllerTest]
+21:21:37.479 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [UrlShortenerControllerTest]
+21:21:37.479 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [UrlShortenerControllerTest]
+21:21:37.479 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [UrlShortenerControllerTest]
+21:21:37.482 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@18e9e6c testClass = UrlShortenerControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@17917af testClass = UrlShortenerControllerTest, locations = '{}', classes = '{class cl.ip.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1aa7923, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1f83a96, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@6afbc1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+21:21:37.482 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [UrlShortenerControllerTest]
+21:21:37.482 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [UrlShortenerControllerTest]
+21:21:37.525 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:21:37.525 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:21:37.525 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:21:37.526 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-12-12 21:21:37.938  INFO 4817 --- [    Test worker] UrlShortenerControllerTest               : Starting UrlShortenerControllerTest on noomen-pc with PID 4817 (started by noomen in /home/noomen/workspace/Clip)
+2016-12-12 21:21:37.940  INFO 4817 --- [    Test worker] UrlShortenerControllerTest               : No active profile set, falling back to default profiles: default
+2016-12-12 21:21:37.990  INFO 4817 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@db69b9: startup date [Mon Dec 12 21:21:37 COT 2016]; root of context hierarchy
+2016-12-12 21:21:39.653  INFO 4817 --- [    Test worker] o.s.b.f.config.PropertiesFactoryBean     : Loading properties file from class path resource [rest-default-messages.properties]
+2016-12-12 21:21:40.381  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@db69b9: startup date [Mon Dec 12 21:21:37 COT 2016]; root of context hierarchy
+2016-12-12 21:21:40.488  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/clip],methods=[POST]}&quot; onto public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.saveExtendedUrltoTinyUrl(java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:40.490  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/clip],methods=[PUT]}&quot; onto public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.getExtendedUrl(java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:40.490  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/clip],methods=[DELETE]}&quot; onto public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.deleteUrl(java.lang.String)
+2016-12-12 21:21:40.490  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/clip/all],methods=[GET]}&quot; onto public java.util.List&lt;cl.ip.response.UrlResponse&gt; cl.ip.controller.UrlShortenerController.getAllUrls()
+2016-12-12 21:21:40.492  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-12-12 21:21:40.493  INFO 4817 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-12-12 21:21:40.531  INFO 4817 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-12 21:21:40.532  INFO 4817 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-12 21:21:40.556  INFO 4817 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2016-12-12 21:21:40.591  INFO 4817 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-12-12 21:21:40.880  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerAdapter   : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@db69b9: startup date [Mon Dec 12 21:21:37 COT 2016]; root of context hierarchy
+2016-12-12 21:21:40.888  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.HttpEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories()
+2016-12-12 21:21:40.888  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryController.headForRepositories()
+2016-12-12 21:21:40.889  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/ || ],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.HttpEntity&lt;org.springframework.data.rest.webmvc.RepositoryLinksResource&gt; org.springframework.data.rest.webmvc.RepositoryController.listRepositories()
+2016-12-12 21:21:40.893  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.893  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.894  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.hateoas.Resources&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.894  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}&quot; onto public org.springframework.hateoas.Resources&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.894  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}],methods=[POST],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.895  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.895  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.895  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.Resource&lt;?&gt;&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.util.MultiValueMap&lt;java.lang.String, java.lang.String&gt;) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.895  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;? extends org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.896  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException
+2016-12-12 21:21:40.896  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+2016-12-12 21:21:40.898  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-12 21:21:40.898  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-12 21:21:40.899  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;? extends org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:40.899  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception
+2016-12-12 21:21:40.899  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;? extends org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources&lt;java.lang.Object&gt;,java.io.Serializable,java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:40.899  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:40.901  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.HttpEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.901  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.HttpEntity&lt;?&gt; org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.901  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.901  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap&lt;java.lang.String, java.lang.Object&gt;,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2016-12-12 21:21:40.902  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}&quot; onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap&lt;java.lang.String, java.lang.Object&gt;,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler)
+2016-12-12 21:21:40.902  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2016-12-12 21:21:40.902  INFO 4817 --- [    Test worker] o.s.d.r.w.RepositoryRestHandlerMapping   : Mapped &quot;{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json || application/*+json;charset=UTF-8]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String)
+2016-12-12 21:21:40.905  INFO 4817 --- [    Test worker] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped &quot;{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}&quot; onto org.springframework.http.HttpEntity&lt;?&gt; org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions()
+2016-12-12 21:21:40.905  INFO 4817 --- [    Test worker] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped &quot;{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}&quot; onto org.springframework.http.HttpEntity&lt;org.springframework.data.rest.webmvc.RootResourceInformation&gt; org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.905  INFO 4817 --- [    Test worker] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped &quot;{[/profile],methods=[GET]}&quot; onto org.springframework.http.HttpEntity&lt;org.springframework.hateoas.ResourceSupport&gt; org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata()
+2016-12-12 21:21:40.906  INFO 4817 --- [    Test worker] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped &quot;{[/profile],methods=[OPTIONS]}&quot; onto public org.springframework.http.HttpEntity&lt;?&gt; org.springframework.data.rest.webmvc.ProfileController.profileOptions()
+2016-12-12 21:21:40.906  INFO 4817 --- [    Test worker] o.s.d.r.w.BasePathAwareHandlerMapping    : Mapped &quot;{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}&quot; onto public org.springframework.http.HttpEntity&lt;org.springframework.data.rest.webmvc.json.JsonSchema&gt; org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation)
+2016-12-12 21:21:40.923  INFO 4817 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in repositoryRestExceptionHandler
+2016-12-12 21:21:41.146  INFO 4817 --- [    Test worker] UrlShortenerControllerTest               : Started UrlShortenerControllerTest in 3.609 seconds (JVM running for 5.966)
+2016-12-12 21:21:41.202  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.202  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.218  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 16 ms
+2016-12-12 21:21:41.345  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.345  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.347  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-12-12 21:21:41.350  WARN 4817 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.deleteUrl(java.lang.String)
+2016-12-12 21:21:41.361  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.361  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.363  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-12-12 21:21:41.397  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.398  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.402  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2016-12-12 21:21:41.404  WARN 4817 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.saveExtendedUrltoTinyUrl(java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:41.416  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.417  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.420  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2016-12-12 21:21:41.421  WARN 4817 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.saveExtendedUrltoTinyUrl(java.lang.String) throws java.lang.Exception
+2016-12-12 21:21:41.436  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.437  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.439  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-12-12 21:21:41.563  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.563  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.565  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-12-12 21:21:41.598  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.598  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.601  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2016-12-12 21:21:41.612  INFO 4817 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-12-12 21:21:41.612  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-12-12 21:21:41.614  INFO 4817 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-12-12 21:21:41.615  WARN 4817 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public cl.ip.response.UrlResponse cl.ip.controller.UrlShortenerController.saveExtendedUrltoTinyUrl(java.lang.String) throws java.lang.Exception
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.1</a> at Dec 12, 2016 9:21:41 PM</p>
+</div>
+</div>
+</body>
+</html>

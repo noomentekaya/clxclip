@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Calling UrlShortner" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-12-13T02:21:37" hostname="noomen-pc" time="0.002">
+  <properties/>
+  <testcase name="Given my urlShortener exists" classname="Scenario: Calling UrlShortner" time="0.0"/>
+  <testcase name="When I call my urlShortener" classname="Scenario: Calling UrlShortner" time="0.0"/>
+  <testcase name="Then it should have been a not null" classname="Scenario: Calling UrlShortner" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Calling UrlShortner" time="0.071"/>
+  <system-out><![CDATA[21:21:37.301 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'StepDefinition'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

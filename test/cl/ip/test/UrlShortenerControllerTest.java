@@ -1,8 +1,6 @@
-package cl.ip.test;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -28,9 +26,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
 
 import cl.ip.Application;
-import cl.ip.RedisUtils;
-import cl.ip.URLShortener;
-import cl.ip.UrlServiceProxy;
+import cl.ip.service.URLShortener;
+import cl.ip.service.utils.RedisUtils;
+import cl.ip.service.utils.UrlServiceProxy;
+
 
 
 @RunWith(SpringJUnit4ClassRunner.class)

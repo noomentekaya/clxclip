@@ -1,4 +1,3 @@
-package cl.ip.test;
 
 import static org.mockito.Mockito.when;
 
@@ -13,9 +12,9 @@ import com.lambdaworks.redis.RedisClient;
 import com.lambdaworks.redis.api.StatefulRedisConnection;
 import com.lambdaworks.redis.api.sync.RedisCommands;
 
-import cl.ip.RedisUtils;
-import cl.ip.URLShortener;
-import cl.ip.UrlServiceProxyImpl;
+import cl.ip.service.URLShortener;
+import cl.ip.service.impl.UrlServiceProxyImpl;
+import cl.ip.service.utils.RedisUtils;
 import junit.framework.Assert;
 
 @RunWith(MockitoJUnitRunner.class)
