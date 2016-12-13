@@ -30,6 +30,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     compile ("com.google.apis:google-api-services-urlshortener:v1-rev47-1.22.0")
     compile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+    compile group: 'commons-validator', name: 'commons-validator', version: '1.4.0'
     testCompile("org.springframework.boot:spring-boot-starter-test")
      testCompile ("org.springframework.boot:spring-boot-starter-test",
         "info.cukes:cucumber-jvm:1.1.8",
@@ -39,3 +40,12 @@ dependencies {
         "info.cukes:cucumber-spring:1.1.8",
 		'commons-io:commons-io:2.4')
 }
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ["test/cl/ip/test"] 
+        }
+    }
+}
+
